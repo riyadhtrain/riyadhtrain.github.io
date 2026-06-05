@@ -1,0 +1,156 @@
+:root {
+    --primary-color: #008C45;
+    --secondary-color: #F8F9FA;
+    --text-color: #2D3436;
+    --accent-color: #E67E22;
+    --white: #ffffff;
+    --shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.8;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    direction: rtl;
+}
+
+header {
+    background-color: var(--white);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+}
+
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+.hero {
+    background: linear-gradient(rgba(0,140,69,0.1), rgba(0,140,69,0.05));
+    padding: 4rem 20px;
+    text-align: center;
+}
+
+section {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+h1 { font-size: 2.8rem; }
+h2 { font-size: 2rem; border-right: 5px solid var(--primary-color); padding-right: 15px; }
+h3 { font-size: 1.5rem; margin-top: 2rem; }
+
+p { margin-bottom: 1.2rem; text-align: justify; }
+
+.image-box {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.image-box svg {
+    max-width: 100%;
+    height: auto;
+}
+
+.how-to-card {
+    background: #fdfdfd;
+    border: 1px solid #eee;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #eee;
+    text-align: right;
+}
+
+th { background: var(--primary-color); color: white; }
+
+.faq-item {
+    background: #fcfcfc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-right: 3px solid var(--accent-color);
+}
+
+footer {
+    background: #2D3436;
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+    margin-top: 4rem;
+}
+
+.footer-nav a {
+    color: #ddd;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    nav { flex-direction: column; }
+    nav ul { margin-top: 1rem; }
+    h1 { font-size: 2rem; }
+    section { margin: 1rem; padding: 1.5rem; }
+}
